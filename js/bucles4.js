@@ -2,7 +2,8 @@
 let suma = 0;
 while (confirm("Pulse Aceptar para ingresar un número o Cancelar para salir y observar la suma de los introducidos.")) {
     let num = parseInt(prompt("Ingrese un número"));
-    if (num == String) {
+    // usar función isNaN()
+    if (isNaN(num)) {
         alert("No ingresaste un número. Inténtalo nuevamente.");
     } else {
         suma += num;
