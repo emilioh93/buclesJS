@@ -26,3 +26,12 @@ for (let j = 0; j < longitud; j++) {
     }
 }
 document.write("La frase tiene " + contador + " vocales.");
+document.write("<br>");
+
+document.write("Ejercicio 16:<br>");
+let invertir = "";
+for (let k = 0; k < longitud; k++) {
+    letra = texto.charAt(k);
+    invertir = letra + invertir;
+}
+document.write(invertir);
